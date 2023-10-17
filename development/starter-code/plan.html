@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+
+    <title>Frontend Mentor | Coffeeroasters subscription site</title>
+    <link rel="stylesheet" href="assets/scss/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/scss/main.css">
+</head>
+<body>
+<!--**********************************
+             Main Header
+ ***********************************-->
+<header class="g-header">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="g-header-main">
+
+                <!--Main Logo-->
+                <div class="g-logo">
+                    <a href="index.html">
+                        <img src="./assets/shared/desktop/logo.svg" alt="">
+                    </a>
+                </div>
+
+                <!--Main Navigation-->
+                <div class="g-navigation">
+                    <nav>
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li><a href="about.html">ABOUT US</a></li>
+                            <li><a href="plan.html">CREATE YOUR PLAN</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+
+</header>
+
+<!--**********************************
+              Common Banner Area
+ ***********************************-->
+<div class="g-common-banner-area">
+    <div class="container">
+        <div class="row">
+
+            <div class="g-common-banner-main ">
+                <figure>
+                    <picture>
+                        <source srcset="assets/plan/desktop/image-hero-blackcup.jpg" media="(min-width:1200px)">
+                        <source srcset="assets/plan/tablet/iimage-hero-whitecup.jpg" media="(min-width:768px)">
+                        <source srcset="assets/plan/mobile/iimage-hero-whitecup.jpg" media="(min-width:576px)">
+                        <img class="img-fluid" src="assets/plan/desktop/image-hero-blackcup.jpg" alt="mominriyadh">
+                    </picture>
+                    <figcaption class="plan-banner-text">
+                        <h1 class="plan">Create plan</h1>
+                        <p> Coffee the way you wanted it to be. For coffee delivered tomorrow, or next week. For
+                            whatever brew method you use. For choice, for convenience, for quality.
+                        </p>
+                    </figcaption>
+                </figure>
+
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<!--**********************************
+              Plan
+ ***********************************-->
+<div class="g-plan-area">
+    <div class="container">
+
+        <div class="g-plan-bg">
+
+
+            <div class="row">
+                <div class="col-md-10 mx-auto">
+                    <div class="g-horizontal-line">
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-10 mx-auto">
+                    <div class="g-plan-main">
+                        <div class="g-plan-step">
+                            <h1>01</h1>
+                            <h2 class="text-white">Pick your <br/>coffee</h2>
+                            <p class="text-white">Select from our evolving range of artisan coffees. Our beans are
+                                ethically
+                                sourced, and we pay fair prices for them. There are new coffees in all profiles
+                                every month for you to try out.
+                            </p>
+                        </div>
+
+                        <div class="g-plan-step">
+                            <h1>02</h1>
+                            <h2 class="text-white">Choose the frequency</h2>
+                            <p class="text-white">Customize your order frequency, quantity, even your roast style and
+                                grind type.
+                                Pause, skip or cancel your subscription with no commitment through our online portal.
+                            </p>
+                        </div>
+
+                        <div class="g-plan-step">
+                            <h1>03</h1>
+                            <h2 class="text-white">Receive and enjoy!</h2>
+                            <p class="text-white">We ship your package within 48 hours, freshly roasted. Sit back and
+                                enjoy award-winning
+                                world-class coffees curated to provide a distinct tasting experience.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<!--**********************************
+              Plan App
+ ***********************************-->
+<div class="g-plan-app-area" id="plan">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 mx-auto">
+                <div class="g-plan-app-main">
+
+                    <div class="g-plan-steps-left">
+                        <ul role="tablist">
+                            <li class="nav-link active" data-bs-toggle="tab" data-bs-target="#coffee-preferences"><span
+                                    class="g-steps-no">01</span>Preferences
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#bean-type"><span
+                                    class="g-steps-no">02</span>Bean type
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#quantity"><span
+                                    class="g-steps-no">03</span>Quantity
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#grind-option"><span
+                                    class="g-steps-no">04</span>Grind option
+                            </li>
+                            <li class="nav-link" data-bs-toggle="tab" data-bs-target="#delivery"><span
+                                    class="g-steps-no">05</span>Deliveries
+                            </li>
+                        </ul>
+                    </div>
+
+
+                    <div class="g-plan-steps-right tab-content">
+
+
+                        <!--Plan One-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#coffee-preferences"
+                               aria-expanded="false" aria-controls="collapse-preferences">
+                                How do you drink your coffee? <i class="bi bi-chevron-down text-primary"></i>
+                            </a>
+                            <div class="tab-pane show active collapse" id="coffee-preferences">
+                                <div class="g-coffee-preferences">
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Capsule</h3>
+                                        <p>Compatible with Nespresso systems and similar brewers</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Filter</h3>
+                                        <p>For pour over or drip methods like Aeropress, Chemex, and V60</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Espresso</h3>
+                                        <p>Dense and finely ground beans for an intense, flavorful experience</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Plan Two-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#bean-type"
+                               aria-expanded="false" aria-controls="collapse-bean-type">
+                                What type of coffee? <i class="bi bi-chevron-down text-primary"></i>
+                            </a>
+                            <div class="tab-pane collapse" id="bean-type">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Single origin</h3>
+                                        <p>Distinct, high quality coffee from a specific family-owned farm</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Decaf</h3>
+                                        <p>Just like regular coffee, except the caffeine has been removed</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Blended</h3>
+                                        <p>Combination of two or three dark roasted beans of organic coffees</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Plan Three-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#quantity"
+                               aria-expanded="false" aria-controls="collapse-quantity">
+                                How much would you like? <i class="bi bi-chevron-down text-primary"></i>
+                            </a>
+
+
+                            <div class="collapse" id="quantity">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>250g</h3>
+                                        <p> Perfect for the solo drinker. Yields about 12 delicious cups.</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>500g</h3>
+                                        <p>Perfect option for a couple. Yields about 40 delectable cups.
+                                        </p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>1000g</h3>
+                                        <p>Perfect for offices and events. Yields about 90 delightful cups.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Plan Four-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#grind-option"
+                               aria-expanded="false" aria-controls="collapse-grind-option">
+                                Want us to grind them? <i class="bi bi-chevron-down text-primary"></i>
+                            </a>
+
+                            <div class="collapse" id="grind-option">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Wholebean</h3>
+                                        <p>Best choice if you cherish the full sensory experience</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Filter</h3>
+                                        <p>For drip or pour-over coffee methods such as V60 or Aeropress
+                                        </p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Cafetiére</h3>
+                                        <p>Course ground beans specially suited for french press coffee</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <!--Plan Five-->
+                        <div class="g-single-plan">
+                            <a class="g-plan-title" data-bs-toggle="collapse" href="#delivery"
+                               aria-expanded="false" aria-controls="collapse-grind-option">
+                                How often should we deliver? <i class="bi bi-chevron-down text-primary"></i>
+                            </a>
+
+
+                            <div class="collapse" id="delivery">
+                                <div class="g-coffee-preferences">
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Every week</h3>
+                                        <p>$14.00 per shipment. Includes free first-class shipping.</p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Every 2 weeks</h3>
+                                        <p>$17.25 per shipment. Includes free priority shipping.
+                                        </p>
+                                    </div>
+
+                                    <div class="g-coffee-preferences-item">
+                                        <h3>Every month</h3>
+                                        <p>$22.50 per shipment. Includes free priority shipping.</p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="g-order-summary">
+                            <p>Order Summary</p>
+                            <blockquote>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+                                sent to me _____.”
+                            </blockquote>
+                        </div>
+
+                        <div class="text-end mb-5">
+                            <button class="btn btn-primary btn-lg text-white" data-bs-toggle="modal"
+                                    data-bs-target="#modal-checkout" aria-expanded="false">
+                                Create my plan!
+                            </button>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="modal-checkout" tabindex="-1" aria-labelledby="modal-checkout" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header p-4">
+                <h1 class="modal-title fs-5" id="modal-checkoutLabel">Order Summary</h1>
+            </div>
+            <div class="modal-body p-4">
+
+                <div class="g-modal-order-summary">
+                    <blockquote>“I drink coffee _____, with a _____ type of bean. _____ ground ala _____,
+                        sent to me _____.”
+
+                    </blockquote>
+                    <small> Is this correct? You can proceed to checkout or go back to plan selection if something
+                        is off. Subscription discount codes can also be redeemed at the checkout.</small>
+                </div>
+            </div>
+
+            <div class="modal-footer border-0 p-4 justify-content-center">
+                <div class="d-flex gap-4 checkout-price-area">
+                    <h2>$14.00/mo</h2>
+                    <button type="button" class="btn btn-primary btn-sm text-white px-5" data-bs-dismiss="modal">
+                        Checkout
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--**********************************
+             Main Footer
+ ***********************************-->
+<footer class="g-footer-area">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="g-footer-main">
+
+                <div class="g-footer-logo">
+                    <a href="">
+                        <img src="assets/shared/desktop/footer-logo.svg" alt="">
+                    </a>
+                </div>
+
+                <div class="g-footer-nav">
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT US</a></li>
+                        <li><a href="plan.html">CREATE YOUR PLAN</a></li>
+                    </ul>
+                </div>
+
+                <div class="g-footer-social">
+                    <a href="">
+                        <img src="assets/shared/desktop/icon-facebook.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/shared/desktop/icon-twitter.svg" alt="">
+                    </a>
+                    <a href="">
+                        <img src="assets/shared/desktop/icon-instagram.svg" alt="">
+                    </a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</footer>
+
+<script src="assets/js/bootstrap.bundle.js"></script>
+<script src="assets/js/gsap.js"></script>
+<script src="assets/js/main.js"></script>
+<script>
+    // document.addEventListener("DOMContentLoaded", function () {
+    //     let gPlanTitle = document.querySelectorAll(".g-plan-title");
+    //     gPlanTitle.forEach((title) => {
+    //         title.addEventListener("click", function () {
+    //             let icon = document.querySelector('.bi-chevron-down');
+    //             if (title.classList.contains('collapsed')) {
+    //                 icon.classList.replace('bi-chevron-down', 'bi-chevron-up');
+    //             } else if (!title.classList.contains('collapsed')) {
+    //                 icon.classList.replace('bi-chevron-up', 'bi-chevron-down');
+    //             }
+    //         })
+    //     })
+    // gPlanTitle.addEventListener("click", function() {
+    //     // Toggle the "collapsed" class on the anchor element
+    //     this.classList.toggle("collapsed");
+    //
+    //     // Toggle the "bi-chevron-down" and "bi-chevron-up" classes on the icon element
+    //     let icon = this.querySelector("i");
+    //     icon.classList.toggle("bi-chevron-down");
+    //     icon.classList.toggle("bi-chevron-up");
+
+    // You might also need to handle the collapse here, depending on your use case
+    // For example, you can use the data-bs-target attribute to select the collapse element and toggle it.
+    // var collapseTarget = document.querySelector(this.getAttribute("data-bs-target"));
+    // collapseTarget.classList.toggle("show");
+    // });
+    // });
+</script>
+</body>
+</html>
